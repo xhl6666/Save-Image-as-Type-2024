@@ -1,32 +1,50 @@
 {
-	"extName": {
-		"message": "Guardar imagen como JPG/PNG/WebP"
-	},
-	"extShortName": {
-		"message": "SaveImageAs"
-	},
-	"extDescription": {
-		"message": "Guarde la imagen como PNG, JPG o WebP mediante el menú contextual de la imagen."
-	},
-	"Save_as": {
-		"message": "Guardar como $FORMAT$",
-		"placeholders": {
-			"format": {
-				"content": "$1",
-				"example": "PNG"
-			}
-		}
-	},
-	"View_in_store": {
-		"message": "Ver en la tienda"
-	},
-	"errorIsNotImage": {
-		"message": "no es una imagen"
-	},
-	"errorOnSaving": {
-		"message": "Ocurrió un error al guardar la imagen."
-	},
-	"errorOnLoading": {
-		"message": "Ocurrió un error al cargar la imagen."
-	}
+  "extName": {
+    "message": "Save image as Type v2"
+  },
+  "extShortName": {
+    "message": "SaveImageAs"
+  },
+  "extDescription": {
+    "message": "Guarda imágenes como PNG/JPG/WebP/GIF mediante el menú contextual"
+  },
+  "Save_as": {
+    "message": "Guardar como $FORMAT$",
+    "placeholders": {
+      "format": {
+        "content": "$1",
+        "example": "PNG"
+      }
+    }
+  },
+  "Open_options": {
+    "message": "Opciones"
+  },
+  "errorIsNotImage": {
+    "message": "Esto no es una imagen"
+  },
+  "errorOnSaving": {
+    "message": "Se produjo un error al guardar la imagen"
+  },
+  "errorOnLoading": {
+    "message": "Se produjo un error al cargar la imagen"
+  },
+  "optDownloadInstantly": {
+    "message": "Descargar imágenes sin cuadro de diálogo de confirmación"
+  },
+  "optContextMenuLabels": {
+    "message": "Etiquetas del menú contextual a mostrar:"
+  },
+  "optDefaultFilename": {
+    "message": "Nombre de archivo predeterminado:"
+  },
+  "optSave": {
+    "message": "Guardar"
+  },
+  "optSavedSuccess": {
+    "message": "Opciones guardadas."
+  },
+  "optViewGithub": {
+    "message": "Ver este fork en GitHub"
+  }
 }

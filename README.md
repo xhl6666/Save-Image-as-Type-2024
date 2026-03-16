@@ -1,36 +1,22 @@
-# Save-Image-as-Type
+# *Save Image as Type* v2
+Fork of [src](https://github.com/image4tools/Save-Image-as-Type) (*authored by image4tools which has since been removed*), but with **no hidden, shady functionality**. Also adds a **GIF** support and extension options.
+## About
 
-# English Version
+Tired of having saved images as *.webp* type? ***Save Image as Type v2*** is a chrome extension which adds an option "*Save as PNG/JPG/WebP/GIF*" to context menu on right-clicking any image.
 
-## Add for pictures Chrome extension for "Save as PNG/JPG/WebP" right-click menu.
+![Save-Image-as-Type-Screenshot](assets/save-as.png)
 
-Save Image as Type is an chrome extension which add Save Image as PNG / JPG / WebP option to the context menu of image.
+> The original extension was based on *Save Image As Type 1.0.5* which has not been maintained for a long time and is no longer accessible.
 
-Screenshot of English version  
-![Save-Image-as-Type Screenshot of the English interface](https://raw.githubusercontent.com/cuixiping/Save-Image-as-Type/master/screenshot-en.jpg)
-
-Because I need to save the webp image on the chrome web store as jpg format, I first found a special conversion software, but it was more troublesome to use, and then found a Save Image As Type 1.0.5 extension in the web store, but this extension has not been maintained for a long time, and it is currently **inoperable**, so I made some improvements on this basis.
-
-[Install Save Image as Type from the Chrome Web Store](https://chrome.google.com/webstore/detail/gabfmnliflodkdafenbcpjdlppllnemd)
-
-Reference works 1: ~~Save Image As Type 1.0.5~~ (Removed from web store)
-
-Reference works 2: [Save Image As PNG 1.0.2](https://chrome.google.com/webstore/detail/nkokmeaibnajheohncaamjggkanfbphi)
-(Can only be saved as PNG，Cannot be saved as JPG and WebP)
-
-# 中文版
-
-## 为图片添加“另存为PNG/JPG/WebP”右键菜单的Chrome扩展。
-
-中文版截图  
-![Save-Image-as-Type 中文界面截图](https://raw.githubusercontent.com/cuixiping/Save-Image-as-Type/master/screenshot-zh.jpg)
-
-由于自己需要将chrome web store上的webp图片另存为jpg格式，先是找了专门的转换软件，但是使用比较麻烦，后来在web store里找到了一个Save Image As Type 1.0.5的扩展，但是这个扩展已经许久不维护，并且当前已经**无法运行**，于是自己在此基础上进行了一些改进。
-
-[从 Chrome Web Store 安装 Save Image as Type](https://chrome.google.com/webstore/detail/gabfmnliflodkdafenbcpjdlppllnemd)
+## Installation
+1. Go to [`chrome://extensions/`](chrome://extensions/)
+2. Enable `Developer mode` (upper right corner)
+3. Select `Load unpacked` in the upper left corner and select the extracted extension folder.  
+The extension should be installed successfully.  
+![Extensions View](assets/extensions-view.png)
 
 
-参考作品1: ~~Save Image As Type 1.0.5~~ (已下架)
-
-参考作品2: [Save Image As PNG 1.0.2](https://chrome.google.com/webstore/detail/nkokmeaibnajheohncaamjggkanfbphi)
-(只能保存为PNG，不能保存为JPG和WebP)
+## Acknowledgments
+- Rob Wu: https://github.com/Rob--W
+- Cuixiping: https://github.com/cuixiping
+- jnordberg: https://github.com/jnordberg/gif.js
