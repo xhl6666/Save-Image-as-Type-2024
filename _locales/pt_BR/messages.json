@@ -46,5 +46,11 @@
   },
   "optViewGithub": {
     "message": "Ver este fork no GitHub"
+  },
+  "optEnableMaxLength": {
+    "message": "Limitar o comprimento do nome do arquivo"
+  },
+  "optMaxLengthValue": {
+    "message": "Comprimento máximo:"
   }
 }

@@ -214,6 +214,54 @@
           <input type="text" id="default-filename" placeholder="-" />
         </div>
 
+        <div class="setting-group">
+          <label class="toggle-label">
+            <input type="checkbox" id="enable-max-length" />
+            <span class="slider"></span>
+            <span data-i18n="optEnableMaxLength">Limit filename length</span>
+          </label>
+
+          <div
+            id="max-length-container"
+            style="
+              margin-top: 10px;
+              opacity: 0.5;
+              pointer-events: none;
+              transition: opacity 0.2s;
+            "
+          >
+            <label
+              for="max-length"
+              data-i18n="optMaxLengthValue"
+              style="
+                display: inline-block;
+                margin-right: 10px;
+                font-weight: 600;
+              "
+              >Max length:</label
+            >
+            <input
+              type="range"
+              id="max-length"
+              min="1"
+              max="255"
+              value="255"
+              style="vertical-align: middle; width: 200px"
+            />
+            <span
+              id="max-length-display"
+              style="
+                display: inline-block;
+                width: 30px;
+                text-align: right;
+                font-weight: bold;
+                color: var(--accent);
+              "
+              >255</span
+            >
+          </div>
+        </div>
+
         <div class="actions">
           <button type="submit" data-i18n="optSave">Save</button>
           <span id="status" data-i18n="optSavedSuccess">Options saved.</span>

@@ -46,5 +46,11 @@
   },
   "optViewGithub": {
     "message": "عرض هذا الـ fork على GitHub"
+  },
+  "optEnableMaxLength": {
+    "message": "تقييد طول اسم الملف"
+  },
+  "optMaxLengthValue": {
+    "message": "الحد الأقصى للطول:"
   }
 }

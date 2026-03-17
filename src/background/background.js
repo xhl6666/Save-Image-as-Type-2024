@@ -82,9 +82,16 @@ async function getSuggestedFilename(src, type) {
     filename = filename.replace(/\s\s+/g, ' ').trim();
     filename = filename.replace(/\.(jpe?g|png|gif|webp|svg)$/gi, '').trim();
 
-    if (filename.length > 32) {
-        filename = filename.substr(0, 32);
+    if (prefs.enableMaxLength) {
+        let maxLen = parseInt(prefs.maxLength, 10);
+
+        if (isNaN(maxLen) || maxLen < 1) maxLen = 255;
+
+        if (filename.length > maxLen) {
+            filename = filename.substr(0, maxLen);
+        }
     }
+    
     filename = filename.replace(/[^0-9a-z]+$/i, '').trim();
     if (!filename) {
         filename = 'image';
