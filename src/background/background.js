@@ -132,22 +132,37 @@ async function buildContextMenu() {
     const prefs = await getPrefs();
     loadMessages();
 
-    prefs.contextMenuLabels.forEach(function (type) {
-        chrome.contextMenus.create({
-            "id": "save_as_" + type.toLowerCase(),
-            "title": chrome.i18n.getMessage("Save_as", [type]),
-            "type": "normal",
-            "contexts": ["image"],
-        });
-    });
+    const types = prefs.contextMenuLabels || [];
 
-    chrome.contextMenus.create({ "id": "sep_1", "type": "separator", "contexts": ["image"] });
-    chrome.contextMenus.create({
-        "id": "options",
-        "title": chrome.i18n.getMessage("Open_options"),
-        "type": "normal",
-        "contexts": ["image"],
-    });
+    // Move download button to top level menu if only one type selected.
+    if (types.length === 1) {
+        const type = types[0];
+
+        chrome.contextMenus.create({
+            id: "save_as_" + type.toLowerCase(),
+            title: chrome.i18n.getMessage("Save_as", [type]),
+            contexts: ["image"],
+        });
+
+    } else {
+        types.forEach(function (type) {
+            chrome.contextMenus.create({
+                id: "save_as_" + type.toLowerCase(),
+                title: chrome.i18n.getMessage("Save_as", [type]),
+                contexts: ["image"],
+            });
+        });
+        chrome.contextMenus.create({
+            id: "sep_1",
+            type: "separator",
+            contexts: ["image"]
+        });
+        chrome.contextMenus.create({
+            id: "options",
+            title: chrome.i18n.getMessage("Open_options"),
+            contexts: ["image"],
+        });
+    }
 }
 
 // Rebuild context menu when extension installs OR when settings change
